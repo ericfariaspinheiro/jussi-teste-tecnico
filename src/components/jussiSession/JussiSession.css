@@ -1,0 +1,66 @@
+.JussiSessions {
+    width: 100%;
+}
+
+.JussiSessionsWrapper {
+    display: flex;
+}
+
+.JussiSessionsInfo {
+    display: flex;
+    flex-grow: 1;
+}
+
+.JussiSessionsInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 241px;
+    margin: 0 auto;
+}
+
+.JussiSessionsTitle {
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;    
+}
+
+.JussiSessionsContent {
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.JussiSessionsLink {
+    max-width: fit-content;
+    padding: 12px 24px;
+    border: 1px solid var(--black, #000);
+    border-radius: 6px;
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;    
+}
+
+.JussiSessionsImg {
+    background-color: var(--grey, #F2F2F2);
+    position: relative;
+    width: 50%;
+    height: 520px;
+    padding: 64px 0;
+}
+
+.JussiSessionsImg img{
+    position: absolute;
+    left: -25%;
+}

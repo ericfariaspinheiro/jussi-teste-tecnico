@@ -1,0 +1,21 @@
+.logoBar {
+    width: 100%;
+    background-color: var(--grey, #F2F2F2);
+}
+
+.logoBarWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 22px 0;
+}
+
+.logoBarText {
+    color: #000;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}

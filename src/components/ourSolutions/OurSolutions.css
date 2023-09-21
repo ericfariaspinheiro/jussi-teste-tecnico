@@ -1,0 +1,106 @@
+.ourSolutions {
+    width: 100%;
+}
+
+.OurSolutionsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 56px 0;
+}
+
+.OurSolutionsTitle {
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.OurSolutionsTitle span{
+    color: var(--green-jussi, #03FFA5);
+    margin-right: 4px;
+}
+
+.OurSolutionsCards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.OurSolutionsCard {
+    border-radius: 4px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: var(--white, #FFF);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.OurSolutionsImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey, #F2F2F2);;
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 53px;
+}
+
+.OurSolutionsCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.OurSolutionsCardName {
+    color: #000;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.OurSolutionsCardDescription {
+    color: var(--pink-jussi, #EE0E7D);
+    font-family: 'Barlow';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.OurSolutionsCardList {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.OurSolutionsCardList li{
+    color: var(--dark-grey, #5B5B5B);
+    font-family: 'Barlow';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.OurSolutionsCardButton {
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 0;
+    background: var(--green-jussi, #03FFA5);
+    padding: 12px 64px 12px 63px;
+}

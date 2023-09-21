@@ -1,0 +1,45 @@
+.contactInfo {
+    width: 100%;
+    background-color: var(--pink-jussi, #EE0E7D);
+}
+
+.contactInfoWrapper {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 136px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfoTitle {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.contactInfoSubTitle {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.contactInfoMail {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}

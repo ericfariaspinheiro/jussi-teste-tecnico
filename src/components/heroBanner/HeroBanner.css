@@ -1,0 +1,119 @@
+.heroBanner {
+    width: 100%;
+    background-color: var(--green-jussi, #03FFA5);
+}
+
+.heroBannerWrapper {
+    display: flex;
+    gap: 112px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.heroBannerInfo {
+    display: flex;
+    flex-direction: column;    
+}
+
+.heroBannerTitle {
+    max-width: 451px;
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.heroBannerSubtitle {
+    max-width: 392px;
+    color: #000;
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 32px;
+}
+
+.heroBannerLink {
+    max-width: fit-content;
+    border: 1px solid var(--black, #000);
+    border-radius: 6px;
+    padding: 12px 24px;
+    color: var(--black, #000);
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.heroBannerCards {
+    position: relative;
+    width: 461px;
+    height: 480px;
+}
+
+.heroBannerCard {
+    width: 209px;
+    height: 271px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid var(--grey, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 32px 32px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.heroBannerCardRefrigerator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-32%);
+    padding: 13px 13px 16px;
+    z-index: 2;
+}
+
+.heroBannerCardRefrigerator img{
+    height: 190px;
+}
+
+.heroBannerCardStandMixer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    gap: 34px;
+    padding: 39px 20px 16px;
+}
+
+.heroBannerCardLiquorBottle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    gap: 24px;
+    padding: 17px 14px 16px;
+}
+
+.heroBannerCardLink {
+    max-width: fit-content;
+    border-radius: 24px;
+    border: 1px solid var(--pink-jussi, #EE0E7D);
+    padding: 11px 24px;
+    color: var(--pink-jussi, #EE0E7D);
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}

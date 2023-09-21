@@ -14,7 +14,7 @@ const Newsletter: React.FC = () => {
             <div className="newsletterWrapper">
                 <strong className="newsletterTitle">receba novidades da nossa área de produtos digitais.</strong>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="newsletterForm">
                     <input
                         type="email"
                         id="email"
@@ -22,8 +22,9 @@ const Newsletter: React.FC = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        className="newsletterFormInput"
                     />
-                    <button type="submit">CADASTRAR</button>
+                    <button type="submit" className="newsletterFormButton">CADASTRAR</button>
                 </form>
             </div>
         </div>
