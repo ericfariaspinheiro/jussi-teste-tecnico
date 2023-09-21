@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    background-color: var(--black, #000);
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 208px;
+}
+
+.footerSocialLinks {
+    display: flex;
+    gap: 17px;
+}

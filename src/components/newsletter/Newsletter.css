@@ -1,0 +1,24 @@
+.newsletter {
+    width: 100%;
+    background-color: var(--black, #000);
+}
+
+.newsletterWrapper {
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 136px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.newsletterTitle {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+}
