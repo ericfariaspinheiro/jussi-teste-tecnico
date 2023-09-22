@@ -1,10 +1,10 @@
 import React from 'react'
 import './LogoBar.css'
 
-import brastempLogo from '../../assets/svgs/brastempLogo.svg'
-import compraCertaLogo from '../../assets/svgs/compraCertaLogo.svg'
-import consulLogo from '../../assets/svgs/consulLogo.svg'
-import theBarLogo from '../../assets/svgs/theBarLogo.svg'
+import brastempLogo from '../../../../assets/svgs/brastempLogo.svg'
+import compraCertaLogo from '../../../../assets/svgs/compraCertaLogo.svg'
+import consulLogo from '../../../../assets/svgs/consulLogo.svg'
+import theBarLogo from '../../../../assets/svgs/theBarLogo.svg'
 
 const LogoBar: React.FC = () => {
 

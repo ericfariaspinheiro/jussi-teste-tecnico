@@ -1,12 +1,12 @@
-import './App.css'
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+
 import Header from './components/header/Header'
-import HeroBanner from './components/heroBanner/HeroBanner'
-import OurSolutions from './components/ourSolutions/OurSolutions'
-import JussiSession from './components/jussiSession/JussiSession'
-import ContactInfo from './components/contactInfo/ContactInfo'
+import Home from './pages/home/Home'
 import Newsletter from './components/newsletter/Newsletter'
 import Footer from './components/footer/Footer'
-import LogoBar from './components/logoBar/LogoBar'
+import Search from './pages/search/Search';
+import { Suspense } from 'react';
 
 function App() {
 
@@ -14,13 +14,12 @@ function App() {
     <>
       <Header />
 
-      <HeroBanner />
-      <LogoBar />
-      <OurSolutions />
-      <JussiSession />
-      <ContactInfo />
-      <Newsletter />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search/:searchTerm" element={<Suspense fallback={<div>Loading...</div>}><Search /></Suspense>} />
+      </Routes>
 
+      <Newsletter />
       <Footer />
     </>
   )

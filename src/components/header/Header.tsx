@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { useNavigate } from 'react-router-dom';
 
 import logoJussiGreen from '../../assets/svgs/logoJussiGreen.svg'
 import searchIcon from '../../assets/svgs/searchIcon.svg'
@@ -7,30 +8,20 @@ import shoppingCartIcon from '../../assets/svgs/shoppingCartIcon.svg'
 
 const Header: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState('');
-    const [results, setResults] = useState([]);
+    const navigate = useNavigate();
 
     const handleSearch = () => {
-        fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${searchTerm}`)
-            .then((response) => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-            })
-            .then((data) => {
-                setResults(data.results);
-                console.log(results)
-            })
-            .catch((error) => {
-            console.error('Error fetching data:', error);
-            });
-    };    
+        if (searchTerm.trim() !== '') {
+          navigate(`/search/${searchTerm}`);
+          setSearchTerm('');
+        }        
+      };
 
     return (
         <div className="header">
             <div className="headerWrapper">
                 <div className="headerLeft">
-                    <a href="#" className="headerLogo">
+                    <a href="/" className="headerLogo">
                         <img src={logoJussiGreen} alt="Logo Jussi" />
                     </a>
 

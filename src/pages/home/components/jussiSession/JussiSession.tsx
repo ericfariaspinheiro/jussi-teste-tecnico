@@ -1,6 +1,6 @@
 import React from 'react'
 import './JussiSession.css'
-import imageJussi from '../../assets/imgs/imageJussi.png'
+import imageJussi from '../../../../assets/imgs/imageJussi.png'
 
 const JussiSession: React.FC = () => {
 

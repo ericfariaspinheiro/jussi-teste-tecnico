@@ -1,9 +1,9 @@
 import React from 'react'
 import './HeroBanner.css'
 
-import refrigerator from '../../assets/imgs/refrigerator.png'
-import standMixer from '../../assets/imgs/standMixer.png'
-import liquorBottle from '../../assets/imgs/liquorBottle.png'
+import refrigerator from '../../../../assets/imgs/refrigerator.png'
+import standMixer from '../../../../assets/imgs/standMixer.png'
+import liquorBottle from '../../../../assets/imgs/liquorBottle.png'
 
 const HeroBanner: React.FC = () => {
 
