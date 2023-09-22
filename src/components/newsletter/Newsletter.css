@@ -1,72 +1,72 @@
 .newsletter {
-    width: 100%;
-    background-color: var(--black, #000);
+  width: 100%;
+  background-color: var(--black, #000);
 }
 
 .newsletterWrapper {
-    max-width: 676px;
-    margin: 0 auto;
-    padding: 136px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  max-width: 676px;
+  margin: 0 auto;
+  padding: 136px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .newsletterTitle {
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: 'Barlow';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: "Barlow";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 
 .newsletterForm {
-    box-sizing: border-box;
-    position: relative;
-    width: 502px;
-    margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  width: 502px;
+  margin: 0 auto;
 }
 
 .newsletterFormInput {
-    box-sizing: border-box;
-    width: 100%;
-    height: 60px;
-    border: 0;
-    background-color: transparent;
-    border-bottom: 1px solid #03FFA5;
-    color: var(--white, #FFF);
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #03ffa5;
+  color: var(--white, #fff);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .newsletterFormInput::placeholder {
-    font-weight: 500;
-    color: var(--white, #FFF);
+  font-weight: 500;
+  color: var(--white, #fff);
 }
 .newsletterFormInput:focus-visible {
-    outline: 0;
+  outline: 0;
 }
 
 .newsletterFormButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    border: 0;
-    color: var(--green-jussi, #03FFA5);
-    background-color: transparent;
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
-    padding: 0;
-    cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: 0;
+  color: var(--green-jussi, #03ffa5);
+  background-color: transparent;
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 0;
+  cursor: pointer;
 }

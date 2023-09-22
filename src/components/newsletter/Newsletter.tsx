@@ -12,7 +12,7 @@ const Newsletter: React.FC = () => {
     return (
         <div className="newsletter">
             <div className="newsletterWrapper">
-                <strong className="newsletterTitle">receba novidades da nossa área de produtos digitais.</strong>
+                <strong className="newsletterTitle">receba novidades da nossa área <br/> de produtos digitais.</strong>
 
                 <form onSubmit={handleSubmit} className="newsletterForm">
                     <input

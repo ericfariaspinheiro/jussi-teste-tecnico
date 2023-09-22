@@ -1,15 +1,24 @@
 .footer {
-    width: 100%;
-    background-color: var(--black, #000);
+  width: 100%;
+  background-color: var(--black, #000);
 }
 
 .footerWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 208px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  padding: 24px 40px;
+  margin: 0 auto;
+}
+
+.footerContent {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .footerSocialLinks {
-    display: flex;
-    gap: 17px;
+  display: flex;
+  gap: 17px;
 }
