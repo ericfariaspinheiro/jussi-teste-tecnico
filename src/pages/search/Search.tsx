@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Search.css";
+import NotFound from "./notFound/NotFound";
 
 interface Product {
   id: string;
@@ -10,6 +11,10 @@ interface Product {
   title: string;
   original_price: number;
   price: number;
+  installments: {
+    quantity: number,
+    amount: number
+  }
 }
 
 const SearchResults: React.FC = () => {
@@ -23,7 +28,6 @@ const SearchResults: React.FC = () => {
           `https://api.mercadolibre.com/sites/MLB/search?q=${searchTerm}&limit=16`,
         );
         setProducts(response.data.results);
-        console.log(response.data.results);
       } catch (error) {
         console.error("Error:", error);
       }
@@ -32,6 +36,12 @@ const SearchResults: React.FC = () => {
     fetchData();
   }, [searchTerm]);
 
+  if(products.length <= 0 && searchTerm?.length) {
+    return (
+      <NotFound searchTerm={searchTerm} />
+    )
+  }
+
   return (
     <div className="searchResult">
       <div className="searchResultWrapper">
@@ -39,6 +49,7 @@ const SearchResults: React.FC = () => {
           <h4>Resultado para</h4>
           <h1>{searchTerm}</h1>
         </div>
+        
         <div className="searchResultContent">
           <div className="searchResultFilters"></div>
           <div className="searchResultProducts">
@@ -63,14 +74,19 @@ const SearchResults: React.FC = () => {
                       })}
                     </p>
                   ) : (
-                    <></>
+                    <div className="searchResultItemOriginalPrice"></div>
                   )}
-                  <p className="searchResultItemPrice">
+                  <strong className="searchResultItemPrice">
                     {product.price.toLocaleString("pt-br", {
                       style: "currency",
                       currency: "BRL",
                     })}
-                  </p>
+                  </strong>
+
+                  <p className="searchResultItemInstallments">em {product.installments.quantity}x de {product.installments.amount.toLocaleString("pt-br", {
+                      style: "currency",
+                      currency: "BRL",
+                    })}</p>
                 </div>
               </a>
             ))}

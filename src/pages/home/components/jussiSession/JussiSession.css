@@ -63,4 +63,5 @@
 .JussiSessionsImg img {
   position: absolute;
   left: -25%;
+  max-width: 100%;
 }
