@@ -20,6 +20,7 @@ interface Product {
 const SearchResults: React.FC = () => {
   const { searchTerm } = useParams<{ searchTerm: string }>();
   const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,13 +29,19 @@ const SearchResults: React.FC = () => {
           `https://api.mercadolibre.com/sites/MLB/search?q=${searchTerm}&limit=16`,
         );
         setProducts(response.data.results);
+        setLoading(false);
       } catch (error) {
         console.error("Error:", error);
+        setLoading(false);
       }
     };
 
     fetchData();
   }, [searchTerm]);
+
+  if (loading) {
+    return <div className="loading-indicator">Loading...</div>;
+  }
 
   if(products.length <= 0 && searchTerm?.length) {
     return (

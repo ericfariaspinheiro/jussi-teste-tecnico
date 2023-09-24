@@ -17,6 +17,13 @@ const Header: React.FC = () => {
     }
   };
 
+  const handleKeyDown = (event: { key: string; }) => {
+    if (event.key === 'Enter' && searchTerm.trim() !== "") {
+      navigate(`/search/${searchTerm}`);
+      setSearchTerm("");
+    }
+  }
+
   return (
     <div className="header">
       <div className="headerWrapper">
@@ -41,9 +48,10 @@ const Header: React.FC = () => {
               className="searchBarInput"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={handleKeyDown}
             />
 
-            <button className="searchBarButton" onClick={handleSearch}>
+            <button className="searchBarButton" onClick={handleSearch} >
               <img src={searchIcon} alt="Ícone de Busca" />
             </button>
           </div>
@@ -53,7 +61,7 @@ const Header: React.FC = () => {
           </a>
 
           <button className="cartButton">
-            <img src={shoppingCartIcon} alt="" />
+            <img src={shoppingCartIcon} alt="Ícone do Carrinho de Compras" />
           </button>
         </div>
       </div>

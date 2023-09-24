@@ -55,9 +55,9 @@ const OurSolutions: React.FC = () => {
                     })}
                   </ul>
 
-                  <button className="OurSolutionsCardButton">
+                  <a href="/" className="OurSolutionsCardButton">
                     Ver solução
-                  </button>
+                  </a>
                 </div>
               </div>
             );

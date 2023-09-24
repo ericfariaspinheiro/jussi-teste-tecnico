@@ -7,7 +7,7 @@
   max-width: 1024px;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px 84px 40px 20px;
   margin: 0 auto;
 }
 
@@ -77,10 +77,11 @@
 .heroBannerCardRefrigerator {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-32%);
+  top: 32%;
+  /* transform: translateY(-32%); */
   padding: 13px 13px 16px;
   z-index: 2;
+  animation: myAnimLeft 2s ease 0s 1 normal forwards;
 }
 
 .heroBannerCardRefrigerator img {
@@ -90,11 +91,12 @@
 .heroBannerCardStandMixer {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 27%;
+  /* transform: translateX(-50%); */
   z-index: 3;
   gap: 34px;
   padding: 39px 20px 16px;
+  animation: myAnimTop 2s ease 0s 1 normal forwards;
 }
 
 .heroBannerCardLiquorBottle {
@@ -104,6 +106,7 @@
   z-index: 1;
   gap: 24px;
   padding: 17px 14px 16px;
+  animation: myAnimRight 2s ease 0s 1 normal forwards;
 }
 
 .heroBannerCardLink {
@@ -118,4 +121,41 @@
   font-weight: 500;
   line-height: 24px;
   text-decoration: none;
+}
+
+
+@keyframes myAnimLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-75px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes myAnimTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-75px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes myAnimRight {
+	0% {
+		opacity: 0;
+		transform: translateX(75px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
