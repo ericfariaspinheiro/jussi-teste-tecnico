@@ -1,63 +1,63 @@
 .searcNotFound {
-    width: 100%;
+  width: 100%;
 }
 
 .searcNotFoundWrapper {
-    max-width: 676px;
-    margin: 0 auto;
-    padding: 166px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  max-width: 676px;
+  margin: 0 auto;
+  padding: 166px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .searcNotFoundTitle {
-    color: var(--black, #000);
-    text-align: center;
-    font-family: "Barlow";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
+  color: var(--black, #000);
+  text-align: center;
+  font-family: "Barlow";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 .searcNotFoundSubtitle {
-    color: var(--black, #000);
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+  color: var(--black, #000);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .searcNotFoundList {
-    color: var(--black, #000);
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    list-style: disc;
-    margin-left: 32px;
+  color: var(--black, #000);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  list-style: disc;
+  margin-left: 32px;
 }
 
-.searcNotFoundList li{
-    margin-bottom: 8px;
+.searcNotFoundList li {
+  margin-bottom: 8px;
 }
 
 .searcNotFoundLink {
-    max-width: fit-content;
-    padding: 12px 24px;
-    border: 1px solid var(--black, #000);
-    border-radius: 6px;
-    color: var(--black, #000);
-    font-family: "Barlow";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    margin: 12px auto;
+  max-width: fit-content;
+  padding: 12px 24px;
+  border: 1px solid var(--black, #000);
+  border-radius: 6px;
+  color: var(--black, #000);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  margin: 12px auto;
 }

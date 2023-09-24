@@ -56,7 +56,8 @@
 
 .heroBannerCards {
   position: relative;
-  width: 461px;
+  width: 100%;
+  max-width: 461px;
   height: 480px;
 }
 
@@ -78,7 +79,6 @@
   position: absolute;
   left: 0;
   top: 32%;
-  /* transform: translateY(-32%); */
   padding: 13px 13px 16px;
   z-index: 2;
   animation: myAnimLeft 2s ease 0s 1 normal forwards;
@@ -92,7 +92,6 @@
   position: absolute;
   top: 0;
   left: 27%;
-  /* transform: translateX(-50%); */
   z-index: 3;
   gap: 34px;
   padding: 39px 20px 16px;
@@ -123,39 +122,96 @@
   text-decoration: none;
 }
 
-
 @keyframes myAnimLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-75px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes myAnimTop {
-	0% {
-		opacity: 0;
-		transform: translateY(-75px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes myAnimRight {
-	0% {
-		opacity: 0;
-		transform: translateX(75px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(75px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .heroBannerWrapper {
+    flex-direction: column;
+  }
+
+  .heroBannerWrapper {
+    padding: 40px 24px;
+  }
+
+  .heroBannerTitle {
+    font-size: 48px;
+  }
+
+  .heroBannerInfo {
+    max-width: max-content;
+    margin: 0 auto;
+  }
+  .heroBannerCards {
+    margin: 0 auto;
+  }
+
+  @keyframes myAnimLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-75px) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(0.7);
+    }
+  }
+
+  @keyframes myAnimTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-75px) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(0.7);
+    }
+  }
+
+  @keyframes myAnimRight {
+    0% {
+      opacity: 0;
+      transform: translateX(75px) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0) scale(0.7);
+    }
+  }
 }

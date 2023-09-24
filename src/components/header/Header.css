@@ -82,3 +82,23 @@
   padding: 0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1024px) {
+  .headerLogo {
+    margin: 0 auto;
+  }
+
+  .headerLink,
+  .cartButton {
+    display: none;
+  }
+
+  .headerWrapper {
+    flex-direction: column;
+  }
+
+  .searchBar,
+  .searchBarInput {
+    width: 100%;
+  }
+}

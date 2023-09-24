@@ -24,9 +24,10 @@
 }
 
 .newsletterForm {
+  width: 100%;
+  max-width: 502px;
   box-sizing: border-box;
   position: relative;
-  width: 502px;
   margin: 0 auto;
 }
 
@@ -69,4 +70,10 @@
   text-transform: uppercase;
   padding: 0;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsletterTitle {
+    font-size: 24px;
+  }
 }

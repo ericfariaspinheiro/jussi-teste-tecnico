@@ -12,9 +12,9 @@ interface Product {
   original_price: number;
   price: number;
   installments: {
-    quantity: number,
-    amount: number
-  }
+    quantity: number;
+    amount: number;
+  };
 }
 
 const SearchResults: React.FC = () => {
@@ -25,6 +25,7 @@ const SearchResults: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true);
         const response = await axios.get(
           `https://api.mercadolibre.com/sites/MLB/search?q=${searchTerm}&limit=16`,
         );
@@ -40,13 +41,11 @@ const SearchResults: React.FC = () => {
   }, [searchTerm]);
 
   if (loading) {
-    return <div className="loading-indicator">Loading...</div>;
+    return <></>;
   }
 
-  if(products.length <= 0 && searchTerm?.length) {
-    return (
-      <NotFound searchTerm={searchTerm} />
-    )
+  if (products.length <= 0 && searchTerm?.length) {
+    return <NotFound searchTerm={searchTerm} />;
   }
 
   return (
@@ -56,7 +55,7 @@ const SearchResults: React.FC = () => {
           <h4>Resultado para</h4>
           <h1>{searchTerm}</h1>
         </div>
-        
+
         <div className="searchResultContent">
           <div className="searchResultFilters"></div>
           <div className="searchResultProducts">
@@ -90,10 +89,13 @@ const SearchResults: React.FC = () => {
                     })}
                   </strong>
 
-                  <p className="searchResultItemInstallments">em {product.installments.quantity}x de {product.installments.amount.toLocaleString("pt-br", {
+                  <p className="searchResultItemInstallments">
+                    em {product.installments.quantity}x de{" "}
+                    {product.installments.amount.toLocaleString("pt-br", {
                       style: "currency",
                       currency: "BRL",
-                    })}</p>
+                    })}
+                  </p>
                 </div>
               </a>
             ))}

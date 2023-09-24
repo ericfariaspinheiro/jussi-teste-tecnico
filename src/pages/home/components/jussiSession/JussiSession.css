@@ -65,3 +65,28 @@
   left: -25%;
   max-width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+  .JussiSessionsImg img {
+    left: -5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .JussiSessionsWrapper {
+    flex-direction: column;
+  }
+
+  .JussiSessionsImg {
+    width: 100%;
+    height: 250px;
+    padding: 32px 0;
+  }
+
+  .JussiSessionsImg img {
+    /* position: unset; */
+    left: 32px;
+    top: -10%;
+    max-width: calc(100% - 64px);
+  }
+}

@@ -39,7 +39,7 @@ const OurSolutions: React.FC = () => {
         <div className="OurSolutionsCards">
           {cards.map((item) => {
             return (
-              <div className="OurSolutionsCard">
+              <div className="OurSolutionsCard" key={item.productName}>
                 <div className="OurSolutionsImg">{item.img}</div>
 
                 <div className="OurSolutionsCardInfo">
@@ -50,8 +50,8 @@ const OurSolutions: React.FC = () => {
                   </p>
 
                   <ul className="OurSolutionsCardList">
-                    {item.features.map((feature) => {
-                      return <li>{feature}</li>;
+                    {item.features.map((feature, index) => {
+                      return <li key={index}>{feature}</li>;
                     })}
                   </ul>
 

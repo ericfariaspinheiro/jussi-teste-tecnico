@@ -21,3 +21,10 @@
   font-weight: 500;
   line-height: 24px;
 }
+
+@media screen and (max-width: 1024px) {
+  .logoBarWrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

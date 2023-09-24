@@ -42,17 +42,17 @@
 }
 
 .searchResultItem {
-    border: 1px solid var(--grey, #f2f2f2);
-    border-radius: 4px;
+  border: 1px solid var(--grey, #f2f2f2);
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   padding: 24px 16px;
   text-decoration: none;
-    transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out;
 }
 
 .searchResultItem:hover {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px 0px;
 }
 
 .searchResultItemImg {
@@ -89,40 +89,46 @@
 }
 
 .searchResultItemOriginalPrice {
-    color: var(--dark-grey, #5B5B5B);
-    font-family: 'Barlow';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    text-decoration: line-through;
-    letter-spacing: 0.015em;
-    line-height: 140%;
-    height: 20px;
-    margin-bottom: 8px;
+  color: var(--dark-grey, #5b5b5b);
+  font-family: "Barlow";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: line-through;
+  letter-spacing: 0.015em;
+  line-height: 140%;
+  height: 20px;
+  margin-bottom: 8px;
 }
 
-
 .searchResultItemPrice {
-    font-family: 'Barlow';
-    color: var(--black, #000);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0.015em;
-    line-height: 140%;
+  font-family: "Barlow";
+  color: var(--black, #000);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  line-height: 140%;
 }
 
 .searchResultItemInstallments {
-    color: var(--dark-grey, #5B5B5B);
-    font-family: 'Barlow';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0.015em;
-    line-height: 140%;
-    height: 20px;
-    margin-bottom: 8px;
+  color: var(--dark-grey, #5b5b5b);
+  font-family: "Barlow";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.015em;
+  line-height: 140%;
+  height: 20px;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+  .searchResultContent {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -17,12 +17,12 @@ const Header: React.FC = () => {
     }
   };
 
-  const handleKeyDown = (event: { key: string; }) => {
-    if (event.key === 'Enter' && searchTerm.trim() !== "") {
+  const handleKeyDown = (event: { key: string }) => {
+    if (event.key === "Enter" && searchTerm.trim() !== "") {
       navigate(`/search/${searchTerm}`);
       setSearchTerm("");
     }
-  }
+  };
 
   return (
     <div className="header">
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
               onKeyDown={handleKeyDown}
             />
 
-            <button className="searchBarButton" onClick={handleSearch} >
+            <button className="searchBarButton" onClick={handleSearch}>
               <img src={searchIcon} alt="Ícone de Busca" />
             </button>
           </div>
