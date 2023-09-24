@@ -44,6 +44,14 @@ React Router - Uma biblioteca para facilitar a navegação e a rerrenderização
 
 Prettier - Uma ferramenta de formatação de código para manter o código fonte consistente e bem formatado.
 
+## API utilizada
+
+Para consulta de produtos, utilizei a API pública do [Mercado Livre](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas).
+
+## Responsividade
+
+Como não constava no figma, tomei a liberdade de adaptar o conteúdo da página de forma simples para se adequar em diferentes dispositivos.
+
 ## Considerações Finais
 
 Este projeto foi desenvolvido como parte do teste técnico para a vaga na Jüssi e demonstra minhas habilidades em desenvolvimento front-end com as tecnologias mencionadas acima. Fico à disposição para qualquer esclarecimento ou dúvida sobre o projeto.
