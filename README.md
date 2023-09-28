@@ -2,6 +2,10 @@
 
 Este é o meu teste técnico para a vaga de desenvolvedor front-end junior na Jüssi, criado por Eric Matheus Farias Pinheiro. 
 
+## Link do projeto ao vivo
+
+https://ericfariaspinheiro.github.io/jussi-teste-tecnico/
+
 ## Descrição do Projeto
 
 Este projeto foi desenvolvido utilizando o Vite, uma ferramenta que facilita a criação de projetos front-end em JavaScript e TypeScript.

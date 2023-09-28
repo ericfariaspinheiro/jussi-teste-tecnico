@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     <div className="header">
       <div className="headerWrapper">
         <div className="headerLeft">
-          <a href="/" className="headerLogo">
+          <a href="jussi-teste-tecnico/" className="headerLogo">
             <img src={logoJussiGreen} alt="Logo Jussi" />
           </a>
 

@@ -14,7 +14,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/jussi-teste-tecnico" element={<Home />} />
         <Route
           path="/search/:searchTerm"
           element={

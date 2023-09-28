@@ -21,7 +21,7 @@ const NotFound: React.FC<NotFoundProps> = ({ searchTerm }) => {
           <li>Utilize outros sinônimos e palavaras similares.</li>
         </ul>
 
-        <a href="/" className="searcNotFoundLink">
+        <a href="jussi-teste-tecnico/" className="searcNotFoundLink">
           Ir para a página inicial
         </a>
       </div>
