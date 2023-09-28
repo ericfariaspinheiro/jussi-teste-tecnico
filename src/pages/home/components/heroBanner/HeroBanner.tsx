@@ -15,7 +15,7 @@ const HeroBanner: React.FC = () => {
             A Jüssi é especialista na criação de lojas usando a plataforma VTEX.
             Precisa criar sua loja ou migrar de plataforma?
           </p>
-          <a href="jussi-teste-tecnico/" className="heroBannerLink">
+          <a href="/jussi-teste-tecnico" className="heroBannerLink">
             Veja nossas soluções
           </a>
         </div>
@@ -23,19 +23,19 @@ const HeroBanner: React.FC = () => {
         <div className="heroBannerCards">
           <div className="heroBannerCard heroBannerCardRefrigerator">
             <img src={refrigerator} alt="Imagem de Geladeira" />
-            <a href="jussi-teste-tecnico/" className="heroBannerCardLink">
+            <a href="/jussi-teste-tecnico" className="heroBannerCardLink">
               Mais Detalhes
             </a>
           </div>
           <div className="heroBannerCard heroBannerCardStandMixer">
             <img src={standMixer} alt="Imagem de Batedeira" />
-            <a href="jussi-teste-tecnico/" className="heroBannerCardLink">
+            <a href="/jussi-teste-tecnico" className="heroBannerCardLink">
               Comprar em 12x
             </a>
           </div>
           <div className="heroBannerCard heroBannerCardLiquorBottle">
             <img src={liquorBottle} alt="Imagem de Garrafa Black Label" />
-            <a href="jussi-teste-tecnico/" className="heroBannerCardLink">
+            <a href="/jussi-teste-tecnico" className="heroBannerCardLink">
               Adicionar à sacola
             </a>
           </div>
